@@ -1,0 +1,90 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyM1fMYsRskGgeTUEmL+44AT",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ValeryTakami/ProgramacionDos/blob/main/Figuras\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RK-Mgz4WIaeC",
+        "outputId": "a74e58c6-2e27-423f-c08e-6c3508cc491a"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Área de triángulo: \n",
+            "4.0\n",
+            "Área de rectángulo: \n",
+            "16\n",
+            "Área de rombo: \n",
+            "506.0\n",
+            "Área de círculo: \n",
+            "153.93804002589985\n"
+          ]
+        }
+      ],
+      "source": [
+        "import math\n",
+        "\n",
+        "\n",
+        "def area_triangulo(base, altura):\n",
+        "    return base * altura / 2\n",
+        "\n",
+        "\n",
+        "def area_rectangulo(base, altura):\n",
+        "    return base * altura\n",
+        "\n",
+        "\n",
+        "def area_rombo(diagonal1, diagonal2):\n",
+        "    return (diagonal1 * diagonal2) / 2\n",
+        "\n",
+        "\n",
+        "def area_circulo(radio):\n",
+        "    return math.pi * radio ** 2\n",
+        "\n",
+        "\n",
+        "print(\"Área de triángulo: \")\n",
+        "print(area_triangulo(2, 4))\n",
+        "\n",
+        "print(\"Área de rectángulo: \")\n",
+        "print(area_rectangulo(8, 2))\n",
+        "\n",
+        "print(\"Área de rombo: \")\n",
+        "print(area_rombo(23, 44))\n",
+        "\n",
+        "print(\"Área de círculo: \")\n",
+        "print(area_circulo(7))"
+      ]
+    }
+  ]
+}
